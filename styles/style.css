@@ -1,0 +1,275 @@
+/* ==== Estilo de Index y nociones generales ==== */
+
+    /*Estilo del header*/
+
+    .titleAndLogo{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .headerNavbar{
+        display:flex;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+        background-color:#86AE94;
+        color:#272F40;
+    }
+
+    .headerLogo{
+        margin-left:10px;
+    }
+
+    h1{
+        margin-left: 10px;
+    }
+
+
+    /*Estilo del Dropdown para cambiar de idioma*/
+    .languagePicker{
+        background-color: gray;
+        color:#E3C7E0;
+        background-position-x: right;
+        margin-right: 10px;
+    }
+
+    /*Estilo general del body*/
+    body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        background-repeat: round;
+        background-color: #272F40;
+        color:#E3C7E0;
+    }
+
+    body section a{
+        color:#86AE94;
+        text-decoration: none;
+    }
+
+    body section a:hover{
+        text-decoration: underline;
+    }
+
+
+    /*Estilos de seccion de preguntas y respuestas */
+    .grid-definiciones-padre{
+        display:grid;
+        grid-template-areas: 
+        "preg1 preg2 preg3"
+        "rta1 rta2 rta3";
+
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 100px 200px;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+        margin-top:20px;
+        margin-bottom:100px;
+    }
+
+    .grid-definiciones-preg1{
+        grid-area:preg1;
+        width:75%;
+    }
+    .grid-definiciones-preg2{
+        grid-area:preg2;
+        width:75%;
+    }
+    .grid-definiciones-preg3{
+        grid-area:preg3;
+        width:75%;
+    }
+
+    .grid-definiciones-rta1{
+        grid-area:rta1;
+        width:75%;
+        line-height: 1.5;
+    }
+
+    .grid-definiciones-rta2{
+        grid-area:rta2;
+        width: 75%;
+        line-height: 1.5;
+    }
+
+    .grid-definiciones-rta3{
+        grid-area:rta3;
+        width:75%;
+        line-height: 1.5;
+    }
+
+
+    /*Division de secciones*/
+    hr{
+        background-color: #86AE94;
+        height:5px;
+    }
+
+    /*Estilo de imagenes de telescopios y los links a sus paginas respectivas*/
+
+    .grid-telescopes-padre{
+        display:grid;
+        grid-template-areas: 
+        "img1 img2 img3"
+        "link1 link2 link3";
+
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 300px 150px;
+        justify-content: center;
+        justify-items: center;
+        margin-top: 100px;
+        row-gap: 25px;
+    }
+
+    grid-telescopes-padre img{
+        width:100%;
+        height:100%;
+    }
+
+    .grid-telescopes-img1{
+        grid-area: img1;
+    }
+    .grid-telescopes-img2{
+        grid-area: img2;
+    }
+    .grid-telescopes-img3{
+        grid-area: img3;
+    }
+    .grid-telescopes-link1{
+        grid-area: link1;
+        margin:5%;
+    }
+    .grid-telescopes-link2{
+        grid-area: link2;
+        margin:5%;
+    }
+    .grid-telescopes-link3{
+        grid-area: link3;
+        margin:5%;
+    }
+
+    /*Estilo del footer*/
+    .footerSection{
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        background-color: #86AE94;
+        color:#272F40;
+
+    }
+
+    footer a{
+        font-size: 20px;
+        color: #272F40;
+        text-decoration: none;
+    }
+
+    footer a:hover{
+        text-decoration: underline;
+    }
+
+    /*Estilo particular de cada uno de los elementos del footer*/
+    .quienesSomos{
+        margin-left:10px;
+    }
+
+    .contacto{
+        color:#272F40;
+        
+    }
+
+    .contactoRedes{
+        display:flex;
+        flex-direction: column;
+        margin-top:10px;
+        margin-right: 10px;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+
+/* ==== Estilo de Contacto ==== */
+    .formContainer{
+        text-align: center;
+    }
+
+    .contactForm{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        max-width: 400px;
+        text-align: center;
+    }
+
+
+    form a{
+        text-decoration: none;
+    }
+
+    form a:hover{
+        text-decoration: underline;
+}
+
+
+/*Convierte a vertical los grids para diseño mobile friendly*/
+@media screen and (max-width: 1050px){
+    .grid-definiciones-padre{
+        grid-template-areas: 
+        "preg1"
+        "rta1"
+        "preg2"
+        "rta2"
+        "preg3"
+        "rta3";
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 200px 100px 200px 100px 200px;
+
+    }
+    
+    .grid-telescopes-padre{
+        grid-template-areas: 
+        "img1"
+        "link1"
+        "img2"
+        "link2"
+        "img3"
+        "link3";
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 75px 250px 75px 250px 75px;
+        align-items: center;
+    }
+
+    .grid-telescopes-link3{
+        height:70%;
+    }
+
+
+}
+
+
+/*Convierte flexbox horizontal de header y footer a vertical para mobile friendly*/
+@media screen and (max-width: 500px){
+    .headerNavbar {
+        flex-direction: column;
+        
+    }
+
+    section img{
+        width: 250px;
+        height: 200px;
+    }
+
+}
+
+/*Convierte footer de flexbox horizontal a vertical*/
+@media screen and (max-width: 450px){
+    .footerSection {
+        flex-direction: column;
+        
+    } 
+    
+}
