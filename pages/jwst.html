@@ -22,12 +22,27 @@
                     Space Telescopes
                 </h1>         
             </div>
+            <div class="dropdown">
+                <button class="btn navMainDropDown dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                </button>
+                <ul class="dropdown-menu navMainMenuDropDown">
+                  <li><a class="dropdown-item" href="./hst.html">Hubble</a></li>
+                  <li><a class="dropdown-item" href="./jwst.html">James Webb</a></li>
+                  <li><a class="dropdown-item" href="./kst.html">Kepler</a></li>
+                </ul>
+              </div>
         </div>
         <div>
-            <select name="lang" id="" class="languagePicker">
-                <option  value="">Español</option>
-                <option value="">English</option>
-            </select>
+            <div class="dropdown">
+                <button class="btn languagePicker dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Lenguaje
+                </button>
+                <ul class="dropdown-menu languagePickerBackground">
+                  <li><a class="dropdown-item languagePickerText" href="#"><img class="languagePickerFlag" src="../multimedia/spain_logo.png" width="30px" height="20px" alt="">Español</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item languagePickerText" href="#"><img class="languagePickerFlag" src="../multimedia/uk_flag.png" width="30px" height="20px" alt="">English</a></li>
+                </ul>
+              </div>
         </div>
     </header>
 
@@ -47,13 +62,12 @@
         <hr>
         <h2>Top 3 Descubrimientos</h2>
 
-        <!--Las imagenes son place holders de descubrimientos-->
-        <img src="" alt="Descubrimiento Top 1 James Webb Space Telescope">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore animi quisquam sit consequuntur omnis suscipit maiores odio, eveniet, saepe sint quas fugit! Et, nulla velit beatae ratione suscipit maxime minus.</p>
-        <img src="" alt="Descubrimiento Top 2 James Webb Space Telescope">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eius quis explicabo corrupti magnam autem animi, sequi cupiditate tempora alias, quia, fuga et iste? Qui veritatis incidunt ducimus nulla est.
-        <img src="" alt="Descubrimiento Top 3 James Webb Space Telescope">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam alias incidunt a reiciendis! Omnis, at qui officiis libero alias est possimus vitae deleniti debitis quam, eaque sequi aliquam inventore quidem!</p>
+        <img src="../multimedia/descubrimientos/descubrimiento1_JWST.jpg" alt="Descubrimiento Top 1 James Webb Space Telescope">
+        <p class="discoveryDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore animi quisquam sit consequuntur omnis suscipit maiores odio, eveniet, saepe sint quas fugit! Et, nulla velit beatae ratione suscipit maxime minus.</p>
+        <img src="../multimedia/descubrimientos/descubrimiento2_JWST.jpg" alt="Descubrimiento Top 2 James Webb Space Telescope">
+        <p class="discoveryDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eius quis explicabo corrupti magnam autem animi, sequi cupiditate tempora alias, quia, fuga et iste? Qui veritatis incidunt ducimus nulla est.</p>
+        <img src="../multimedia/descubrimientos/descubrimiento3_JWST.jpg" alt="Descubrimiento Top 3 James Webb Space Telescope">
+        <p class="discoveryDescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam alias incidunt a reiciendis! Omnis, at qui officiis libero alias est possimus vitae deleniti debitis quam, eaque sequi aliquam inventore quidem!</p>
     </main>
     <footer class="footerSection">
         <h3 class="quienesSomos">

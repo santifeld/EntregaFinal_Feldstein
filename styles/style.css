@@ -25,6 +25,14 @@
         margin-left: 10px;
     }
 
+    .navMainDropDown{
+        background-color: #86AE94;
+    }
+    .navMainMenuDropDown{
+        background-color: #86AE94;
+    }
+
+
 
     /*Estilo del Dropdown para cambiar de idioma*/
     .languagePicker{
@@ -32,6 +40,18 @@
         color:#E3C7E0;
         background-position-x: right;
         margin-right: 10px;
+    }
+
+    .languagePickerFlag{
+        margin-right: 10%;
+    }
+
+    .languagePickerBackground{
+        background-color:gray;
+        color:#E3C7E0;
+    }
+    .languagePickerText{
+        color:#E3C7E0;
     }
 
     /*Estilo general del body*/
@@ -150,6 +170,14 @@
         margin:5%;
     }
 
+
+    /*Estilo descubrimientos*/
+
+    .discoveryDescription{
+        margin-top:50px;
+        margin-bottom:50px;
+    }
+
     /*Estilo del footer*/
     .footerSection{
         display:flex;
@@ -205,6 +233,13 @@
         text-align: center;
     }
 
+    .contactButtonColor{
+        color:#E3C7E0;
+        background-color: gray;
+    }
+    .contactButtonColor:hover{
+        background-color: #86AE94;
+    }
 
     form a{
         text-decoration: none;

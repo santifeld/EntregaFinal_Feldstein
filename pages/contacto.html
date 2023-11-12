@@ -20,12 +20,27 @@
                     Space Telescopes
                 </h1>         
             </div>
+            <div class="dropdown">
+                <button class="btn navMainDropDown dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                </button>
+                <ul class="dropdown-menu navMainMenuDropDown">
+                  <li><a class="dropdown-item" href="./hst.html">Hubble</a></li>
+                  <li><a class="dropdown-item" href="./jwst.html">James Webb</a></li>
+                  <li><a class="dropdown-item" href="./kst.html">Kepler</a></li>
+                </ul>
+              </div>
         </div>
         <div>
-            <select name="lang" id="" class="languagePicker">
-                <option  value="">Español</option>
-                <option value="">English</option>
-            </select>
+            <div class="dropdown">
+                <button class="btn languagePicker dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Lenguaje
+                </button>
+                <ul class="dropdown-menu languagePickerBackground">
+                  <li><a class="dropdown-item languagePickerText" href="#"><img class="languagePickerFlag" src="../multimedia/spain_logo.png" width="30px" height="20px" alt="">Español</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item languagePickerText" href="#"><img class="languagePickerFlag" src="../multimedia/uk_flag.png" width="30px" height="20px" alt="">English</a></li>
+                </ul>
+              </div>
         </div>
     </header>
 
@@ -52,7 +67,7 @@
             <br>
             <br>
             <div class="col-auto">
-                <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+                <button type="submit" class="btn contactButtonColor mb-3">Enviar</button>
             </div>
         </form>    
 
