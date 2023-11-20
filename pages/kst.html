@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="icon" href="../multimedia/hubble-space-telescope.png" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/css/style.css">
     <title>
         Kepler Space Telescope
     </title>
@@ -47,36 +47,43 @@
     </header>
 
     <main>
-        <h2>Breve historia</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos commodi temporibus laudantium saepe a rem, fuga numquam doloremque. </p>
+        <h2 class="telescopeTitle">Kepler Space Telescope</h2>
 
-        <h2>Kepler Space Telescope</h2>
-        <img src="../multimedia/kst.jpg" alt="Kepler Space Telescope" width="350" height="300">
-        <h3>Ficha Técnica: </h3>
-        <ul>
-            <li>Fecha de Lanzamiento: 2/01/1995</li>
-            <li>Estado: Desactivado</li>
-            <li>Fecha de Desactivación: 15/11/2010</li>
-        </ul>
+        <section class="historyAndTechnicalDetails">
+            <h3 class="sectionTitle">Breve Historia</h3>
+            <p class="briefHistoryDescription">El Observatorio Espacial Kepler es un ahora difunto telescopio cual su rol principal fue el de la búsqueda de planetas del tamaño de la Tierra orbitando otras estrellas. A diferencia del HST y del JWST este no orbitaba la Tierra, sino que tenía una órbita heliócentrica.</p>
+
+            
+            <img src="../multimedia/kst.jpg" alt="Kepler Space Telescope" width="600" height="500">
+            <h3 class="sectionTitle">Ficha Técnica: </h3>
+            <ul class="historyAndTechnicalDetailsList">
+                <li>Fecha de Lanzamiento: 2/01/1995</li>
+                <li>Estado: Desactivado</li>
+                <li>Fecha de Desactivación: 15/11/2010</li>
+            </ul>
+        </section>
 
         <hr>
-        <h2>Top 3 Descubrimientos</h2>
+        
+        <section class="topDiscoveries">
+            <h3 class="sectionTitle">Top 3 Descubrimientos</h3>
 
-        <img src="../multimedia/descubrimientos/descubrimiento1_KST.jpg" alt="Descubrimiento Top 1 Kepler Space Telescope">
-        <p class="discoveryDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore animi quisquam sit consequuntur omnis suscipit maiores odio, eveniet, saepe sint quas fugit! Et, nulla velit beatae ratione suscipit maxime minus.</p>
-        <img src="../multimedia/descubrimientos/descubrimiento2_KST.jpg" alt="Descubrimiento Top 2 Kepler Space Telescope">
-        <p class="discoveryDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eius quis explicabo corrupti magnam autem animi, sequi cupiditate tempora alias, quia, fuga et iste? Qui veritatis incidunt ducimus nulla est.</p>
-        <img src="../multimedia/descubrimientos/descubrimiento3_KST.jpg" alt="Descubrimiento Top 3 Kepler Space Telescope">
-        <p class="discoveryDescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam alias incidunt a reiciendis! Omnis, at qui officiis libero alias est possimus vitae deleniti debitis quam, eaque sequi aliquam inventore quidem!</p>
+            <img src="../multimedia/descubrimientos/descubrimiento1_KST.jpg" width="800" height="630" alt="Descubrimiento Top 1 Kepler Space Telescope">
+            <p class="discoveryDescription">El gigante gaseoso Kepler-16b es el primer exoplaneta que se descubrio con dos soles en su cielo. Recuerda a Tatooine el famoso planeta de la serie de películas Star Wars. El descubrimiento fue hecho en Septiembre del 2011.</p>
+            <img class="uncommonResolutionImg" src="../multimedia/descubrimientos/descubrimiento2_KST.jpg" width="800" height="450" alt="Descubrimiento Top 2 Kepler Space Telescope">
+            <p class="discoveryDescription">Kepler-10b es el primer "incuestionablemente rocoso" exoplaneta descubierto. Con una temperatura altísima, este mundo es 1.4 veces el tamaño de la Tierra y se encuentra a 560 años luz.</p>
+            <img class="uncommonResolutionImg" src="../multimedia/descubrimientos/descubrimiento3_KST.jpg" width="800" height="450" alt="Descubrimiento Top 3 Kepler Space Telescope">
+            <p class="discoveryDescription">El pequeño exoplaneta Kepler-37b, anunciado en Febrero del 2013, es apenas más grande que la Luna, orbita su estrella cada 13 días y es probable que tenga una temperatura superficial superior a 400°C.</p>
+        </section>
     </main>
     
     <footer class="footerSection">
-        <h3 class="quienesSomos">
+        <h4 class="quienesSomos">
             <a href="./quienessomos.html" >¿Quienes somos?</a>
-        </h3>
-        <h3 class="contacto">
+        </h4>
+        <h4 class="contacto">
             <a href="./contacto.html" >Contacto</a>
-        </h3>
+        </h4>
 
         <ul class="contactoRedes">
             <li><img src="../multimedia/facebook-logo.avif" alt="Facebook logo" width="20" height="20"><a href="https://www.facebook.com">Facebook</a></li>

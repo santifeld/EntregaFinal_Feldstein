@@ -46,7 +46,8 @@
         margin-right: 10%;
     }
 
-    .languagePickerBackground{
+    .languagePickerBa
+    ckground{
         background-color:gray;
         color:#E3C7E0;
     }
@@ -61,6 +62,16 @@
         background-repeat: round;
         background-color: #272F40;
         color:#E3C7E0;
+    }
+
+    body p{
+        color: #E3C7E0;
+        opacity: 50%;
+    }
+
+    body li{
+        color: #E3C7E0;
+        opacity: 50%;
     }
 
     body section a{
@@ -171,11 +182,48 @@
     }
 
 
+    /*Estilo de paginas de cada telescopio*/
+    .telescopeTitle{
+        text-decoration: underline;
+        margin-top: 35px;
+        margin-bottom: 80px;
+    }
+
+    .sectionTitle{
+        font-size:25px;
+    }
+    
+    .historyAndTechnicalDetails{
+        display:flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        row-gap:20px;
+    }
+    
+
+    .briefHistoryDescription{
+        width:550px;
+    }
+
+    .historyAndTechnicalDetails ul{
+        padding:0;
+    }
+
+
+    .topDiscoveries{
+        display:flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        row-gap:10px;
+    }
+
     /*Estilo descubrimientos*/
 
     .discoveryDescription{
-        margin-top:50px;
         margin-bottom:50px;
+        width:550px;
     }
 
     /*Estilo del footer*/
@@ -213,6 +261,7 @@
         flex-direction: column;
         margin-top:10px;
         margin-right: 10px;
+        
     }
 
     ul{
@@ -250,6 +299,27 @@
 }
 
 
+/* ==== Estilo de Quienes Somos ==== */
+    .usTitle{
+        margin-top:35px;
+    }
+
+    .usSection{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .usDescription{
+        margin-bottom:50px;
+        width:550px;
+    }
+
+    .nosotrosImg{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
 /*Convierte a vertical los grids para diseño mobile friendly*/
 @media screen and (max-width: 1050px){
     .grid-definiciones-padre{
@@ -282,7 +352,59 @@
         height:70%;
     }
 
+    .nosotrosImg{
+        height:400px;
+        width:700px;
+    }
+    
 
+
+}
+
+
+@media screen and (max-width: 800px){
+    .headerNavbar {
+        flex-direction: column;
+        
+    }
+
+    section img{
+        width: 500px;
+        height: 330px;
+    }
+
+    .uncommonResolutionImg{
+        height: 300px;
+    }
+
+    .historyAndTechnicalDetails img{
+        height:400px;
+        width:500px;
+    }
+
+    .historyAndTechnicalDetails p{
+        font-size:14px;
+        width:400px;
+    }
+
+    .historyAndTechnicalDetails li{
+        font-size:14px;
+    }
+
+    .discoveryDescription{
+        font-size:14px;
+        width:400px;
+    }
+
+    .nosotrosImg{
+        height:200px;
+        width:400px;
+    }
+
+    .usDescription{
+        font-size:14px;
+        width:400px;
+    }
 }
 
 
@@ -298,13 +420,48 @@
         height: 200px;
     }
 
+    .uncommonResolutionImg{
+        height: 150px;
+    }
+
+    .historyAndTechnicalDetails img{
+        height:215px;
+        width:315px;
+    }
+
+    .historyAndTechnicalDetails p{
+        font-size:11px;
+        width:300px;
+    }
+
+    .historyAndTechnicalDetails li{
+        font-size:11px;
+    }
+
+    .discoveryDescription{
+        font-size:11px;
+        width:300px;
+    }
+
+    .usDescription{
+        font-size:11px;
+        width:300px;
+    }
+
 }
 
 /*Convierte footer de flexbox horizontal a vertical*/
 @media screen and (max-width: 450px){
     .footerSection {
         flex-direction: column;
-        
     } 
+
+    .footerSection a{
+        font-size:16px;
+    }
     
+    .nosotrosImg{
+        height:100px;
+        width:200px;
+    }
 }

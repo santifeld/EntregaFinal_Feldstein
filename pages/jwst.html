@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="icon" href="../multimedia/hubble-space-telescope.png" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/css/style.css">
     <title>
         James Webb Space Telescope
     </title>
@@ -47,35 +47,42 @@
     </header>
 
     <main>
-        <h2>Breve historia</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos commodi temporibus laudantium saepe a rem, fuga numquam doloremque. </p>
+        <h2 class="telescopeTitle">James Webb Space Telescope</h2>
 
-        <h2>James Webb Space Telescope</h2>
-        <img src="../multimedia/jwst.jpg" alt="James Webb Space Telescope" width="350" height="300">
-        <h3>Ficha Técnica:</h3>
-        <ul>
-            <li>Fecha de Lanzamiento: 2/01/2022</li>
-            <li>Estado: Activo</li>
-            <li>Fecha de Desactivación: --</li>
-        </ul>
+        <section class="historyAndTechnicalDetails">
+            <h3 class="sectionTitle">Breve Historia</h3>
+            <p class="briefHistoryDescription">El Observatorio Espacial James Webb, es un flamante telescopio espacial producto de la colaboracio entre la NASA, la ESA (Agencia Europea Espacial) y la CSA (Agencia Canadiense Espacial). Capaz de conducir estudios en el espectro infrarrojo, permite observar en alta resolucion objetos muy lejanos, antiguos y tenues como para verlos con cualquier otro observatorio.</p>
+
+            <img src="../multimedia/jwst.jpg" alt="James Webb Space Telescope"width="600" height="500">
+            <h3 class="sectionTitle">Ficha Técnica:</h3>
+            <ul class="historyAndTechnicalDetailsList">
+                <li>Fecha de Lanzamiento: 25/12/2021</li>
+                <li>Estado: Activo</li>
+                <li>Fecha de Desactivación: --</li>
+            </ul>
+        </section>
 
         <hr>
-        <h2>Top 3 Descubrimientos</h2>
+        
+        <section class="topDiscoveries">
+            <h3 class="sectionTitle">Top 3 Descubrimientos</h3>
 
-        <img src="../multimedia/descubrimientos/descubrimiento1_JWST.jpg" alt="Descubrimiento Top 1 James Webb Space Telescope">
-        <p class="discoveryDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore animi quisquam sit consequuntur omnis suscipit maiores odio, eveniet, saepe sint quas fugit! Et, nulla velit beatae ratione suscipit maxime minus.</p>
-        <img src="../multimedia/descubrimientos/descubrimiento2_JWST.jpg" alt="Descubrimiento Top 2 James Webb Space Telescope">
-        <p class="discoveryDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eius quis explicabo corrupti magnam autem animi, sequi cupiditate tempora alias, quia, fuga et iste? Qui veritatis incidunt ducimus nulla est.</p>
-        <img src="../multimedia/descubrimientos/descubrimiento3_JWST.jpg" alt="Descubrimiento Top 3 James Webb Space Telescope">
-        <p class="discoveryDescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam alias incidunt a reiciendis! Omnis, at qui officiis libero alias est possimus vitae deleniti debitis quam, eaque sequi aliquam inventore quidem!</p>
+            <img src="../multimedia/descubrimientos/descubrimiento1_JWST.jpg" width="700px" height="500px" alt="Descubrimiento Top 1 James Webb Space Telescope">
+            <p class="discoveryDescription">En la region de Rho Ophiuchi existe una region pequeña de formacion de estrellas que se puede apreciar en la imagen. En ella se aprecia polvo molecular rojo, que es hidrogeno, mientras otras estrellas tienen la sombra de un disco circunestelar; una pista a la creacion de planetas futuros. A pesar del caos visible en la imagen, esta es una region pequeña y la mas cercana ala tierra de formacion de estrellas.</p>
+            <img src="../multimedia/descubrimientos/descubrimiento2_JWST.jpg" width="700px" height="500px" alt="Descubrimiento Top 2 James Webb Space Telescope">
+            <p class="discoveryDescription">Al comienzo del 2023, el JWST identifico su primer exoplaneta llamado LHS 475b. Este se encuentra a 41 años luz de la Tierra y posee un diametro similar a ella. Esta rendicion artistica de la observacion, a ayudado a inaugurar una nueva frontera de descubrimientos de exoplanetas similares a la Tierra.</p>
+            <img src="../multimedia/descubrimientos/descubrimiento3_JWST.jpg" width="630px" height="630px" alt="Descubrimiento Top 3 James Webb Space Telescope">
+            <p class="discoveryDescription">La nebolusa de la Tarantula es la region de formación de estrellas más grande de todo el Grupo Local, region de galaxias en la que la Via Lactea se encuentra. JWST ha ayudado con sus observaciones a entender la composicion de esta nebulosa y al revelar la existencia de protoestrellas en esa region.</p>
+        </section>
+    
     </main>
     <footer class="footerSection">
-        <h3 class="quienesSomos">
+        <h4 class="quienesSomos">
             <a href="./quienessomos.html" >¿Quienes somos?</a>
-        </h3>
-        <h3 class="contacto">
+        </h4>
+        <h4 class="contacto">
             <a href="./contacto.html" >Contacto</a>
-        </h3>
+        </h4>
 
         <ul class="contactoRedes">
             <li><img src="../multimedia/facebook-logo.avif" alt="Facebook logo" width="20" height="20"><a href="https://www.facebook.com">Facebook</a></li>
