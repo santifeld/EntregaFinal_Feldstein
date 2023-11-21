@@ -1,0 +1,325 @@
+@import "partials/variables";
+
+@keyframes aparecer {
+    0% {opacity: 0;}
+    100% {opactiy: 100;}
+}
+
+
+/*Estilo de Header*/
+
+.headerNavbar{
+    display:flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    background-color:$spaceGreen;
+    color:$spaceBlue;
+}
+
+.titleAndLogo{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLogo{
+    margin-left:10px;
+}
+
+
+h1{
+    margin-left: 10px;
+    animation-duration:4s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+}
+
+.navMainDropDown{
+    background-color: $spaceGreen;
+    animation-duration:4s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+}
+.navMainMenuDropDown{
+    background-color: $spaceGreen;
+}
+
+
+/*Estilo del Dropdown para cambiar de idioma*/
+.languagePicker{
+    background-color: $spaceGray;
+    color:$spacePink;
+    background-position-x: right;
+    margin-right: 10px;
+}
+
+.languagePickerFlag{
+    margin-right: 10%;
+}
+
+.languagePickerBackground{
+    background-color:$spaceGray;
+    color:$spacePink;
+}
+.languagePickerText{
+    color:$spacePink;
+}
+
+
+/*Estilo general del body*/
+body{
+    font-family: $font;
+    text-align: center;
+    background-repeat: round;
+    background-color: $spaceBlue;
+    color:$spacePink;
+
+    p{
+        color: $spacePink;
+        opacity: 50%; 
+    }
+
+    section{
+        a{
+            color:$spaceGreen;
+            text-decoration: none;  
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+
+/*Estilos de seccion de preguntas y respuestas */
+.grid-definiciones-padre{
+    display:grid;
+    grid-template-areas: 
+    "preg1 preg2 preg3"
+    "rta1 rta2 rta3";
+
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px 200px;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    margin-top:20px;
+    margin-bottom:100px;
+}
+
+.grid-definiciones-preg1{
+    grid-area:preg1;
+    width:75%;
+}
+.grid-definiciones-preg2{
+    grid-area:preg2;
+    width:75%;
+}
+.grid-definiciones-preg3{
+    grid-area:preg3;
+    width:75%;
+}
+
+.grid-definiciones-rta1{
+    grid-area:rta1;
+    width:75%;
+    line-height: 1.5;
+}
+
+.grid-definiciones-rta2{
+    grid-area:rta2;
+    width: 75%;
+    line-height: 1.5;
+}
+
+.grid-definiciones-rta3{
+    grid-area:rta3;
+    width:75%;
+    line-height: 1.5;
+}
+
+/*Division de secciones*/
+hr{
+    background-color: $spaceGreen;
+    height:5px;
+}
+
+/*Estilo de imagenes de telescopios y los links a sus paginas respectivas*/
+
+.grid-telescopes-padre{
+    display:grid;
+    grid-template-areas: 
+    "img1 img2 img3"
+    "link1 link2 link3";
+
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 300px 150px;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 100px;
+    row-gap: 25px;
+
+}
+
+.grid-telescopes-img1{
+    grid-area: img1;
+}
+.grid-telescopes-img2{
+    grid-area: img2;
+}
+.grid-telescopes-img3{
+    grid-area: img3;
+}
+.grid-telescopes-link1{
+    grid-area: link1;
+    margin:5%;
+}
+.grid-telescopes-link2{
+    grid-area: link2;
+    margin:5%;
+}
+.grid-telescopes-link3{
+    grid-area: link3;
+    margin:5%;
+}
+
+/*Estilo de paginas de cada telescopio*/
+    .telescopeTitle{
+    text-decoration: underline;
+    margin-top: 35px;
+    margin-bottom: 80px;
+}
+
+.sectionTitle{
+    font-size:25px;
+}
+
+.historyAndTechnicalDetails{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    row-gap:20px;
+
+    ul{
+        padding:0;
+    }
+}
+
+.historyAndTechnicalDetailsList{
+    opacity:50%;
+}
+
+.briefHistoryDescription{
+    width:550px;
+}
+
+.topDiscoveries{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    row-gap:10px;
+}
+
+/*Estilo descubrimientos*/
+.discoveryDescription{
+    margin-bottom:50px;
+    width:550px;
+}
+
+/*Estilo del footer*/
+.footerSection{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: $spaceGreen;
+    color:$spaceBlue;
+    
+    a{
+        font-size: 20px;
+        color: $spaceBlue;
+        text-decoration: none;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+/*Estilo particular de cada uno de los elementos del footer*/
+    .quienesSomos{
+    margin-left:10px;
+}
+
+.contacto{
+    color:$spaceBlue;
+    
+}
+
+.contactoRedes{
+    display:flex;
+    flex-direction: column;
+    margin-top:10px;
+    margin-right: 10px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/*Estilo de Contacto*/
+.formContainer{
+    text-align: center;
+}
+
+.contactForm{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 400px;
+    text-align: center;
+}
+
+.contactButtonColor{
+    color:$spacePink;
+    background-color: $spaceGray;
+}
+.contactButtonColor:hover{
+    background-color: $spaceGreen;
+}
+
+form{
+    a{
+        text-decoration: none;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+/*Estilo de Quienes Somos*/
+.usTitle{
+    margin-top:35px;
+}
+
+.usSection{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.usDescription{
+    margin-bottom:50px;
+    width:550px;
+}
+
+.nosotrosImg{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@import "partials/mediaQ";

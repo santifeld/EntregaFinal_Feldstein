@@ -1,0 +1,151 @@
+/*Convierte a vertical los grids para diseño mobile friendly*/
+@media screen and (max-width: 1050px){
+    .grid-definiciones-padre{
+        grid-template-areas: 
+        "preg1"
+        "rta1"
+        "preg2"
+        "rta2"
+        "preg3"
+        "rta3";
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 200px 100px 200px 100px 200px;
+
+    }
+    
+    .grid-telescopes-padre{
+        grid-template-areas: 
+        "img1"
+        "link1"
+        "img2"
+        "link2"
+        "img3"
+        "link3";
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 75px 250px 75px 250px 75px;
+        align-items: center;
+    }
+
+    .grid-telescopes-link3{
+        height:70%;
+    }
+
+    .nosotrosImg{
+        height:400px;
+        width:700px;
+    }
+    
+
+
+}
+
+
+@media screen and (max-width: 800px){
+    .headerNavbar {
+        flex-direction: column;
+        
+    }
+    section{
+        img{
+            width: 500px;
+            height: 330px;
+        }
+    }
+
+    .uncommonResolutionImg{
+        height: 300px;
+    }
+    .historyAndTechnicalDetails{
+        img{
+            height:400px;
+            width:500px;
+        }
+
+        p{
+            font-size:14px;
+            width:400px;
+        }
+
+        li{
+            font-size:14px;
+        }
+    }
+
+    .discoveryDescription{
+        font-size:14px;
+        width:400px;
+    }
+
+    .nosotrosImg{
+        height:200px;
+        width:400px;
+    }
+
+    .usDescription{
+        font-size:14px;
+        width:400px;
+    }
+}
+
+
+/*Convierte flexbox horizontal de header y footer a vertical para mobile friendly*/
+@media screen and (max-width: 500px){
+    .headerNavbar {
+        flex-direction: column;
+        
+    }
+
+    section{
+        img{
+            width: 250px;
+            height: 200px;
+        }
+    }
+
+    .uncommonResolutionImg{
+        height: 150px;
+    }
+
+    .historyAndTechnicalDetails{
+        img{
+            height:215px;
+            width:315px;
+        }
+
+        p{
+            font-size:11px;
+            width:300px;
+        }
+
+        li{
+            font-size:11px;
+        }
+    }
+
+    .discoveryDescription{
+        font-size:11px;
+        width:300px;
+    }
+
+    .usDescription{
+        font-size:11px;
+        width:300px;
+    }
+
+}
+
+/*Convierte footer de flexbox horizontal a vertical*/
+@media screen and (max-width: 450px){
+    .footerSection {
+        flex-direction: column;
+
+        a{
+            font-size:16px;
+        }
+    } 
+    
+    .nosotrosImg{
+        height:100px;
+        width:200px;
+    }
+}
