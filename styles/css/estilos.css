@@ -238,6 +238,25 @@ hr {
   text-decoration: underline;
 }
 
+.footerSectionSmallPages {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #86AE94;
+  color: #272F40;
+}
+.footerSectionSmallPages a {
+  font-size: 20px;
+  color: #272F40;
+  text-decoration: none;
+}
+.footerSectionSmallPages a:hover {
+  text-decoration: underline;
+}
+
 /*Estilo particular de cada uno de los elementos del footer*/
 .quienesSomos {
   margin-left: 10px;
@@ -265,10 +284,18 @@ ul {
 
 .contactForm {
   display: flex;
+  row-gap: 35px;
   flex-direction: column;
-  justify-content: space-evenly;
-  max-width: 400px;
-  text-align: center;
+  align-items: center;
+}
+.contactForm .contactFromItem {
+  width: 50%;
+}
+.contactForm .contactFormSampleText {
+  color: gray;
+}
+.contactForm .contactFormCheckPolicyLine {
+  margin-top: -20px;
 }
 
 .contactButtonColor {
@@ -324,10 +351,6 @@ form a:hover {
   .grid-telescopes-link3 {
     height: 70%;
   }
-  .nosotrosImg {
-    height: 400px;
-    width: 700px;
-  }
 }
 @media screen and (max-width: 800px) {
   .headerNavbar {
@@ -358,10 +381,15 @@ form a:hover {
   .nosotrosImg {
     height: 200px;
     width: 400px;
+    margin-top: 100px;
   }
-  .usDescription {
-    font-size: 14px;
+  .usSection h2 {
+    margin-top: 50px;
+  }
+  .usSection .usDescription {
+    font-size: 12px;
     width: 400px;
+    margin-top: 50px;
   }
 }
 /*Convierte flexbox horizontal de header y footer a vertical para mobile friendly*/
@@ -391,22 +419,22 @@ form a:hover {
     font-size: 11px;
     width: 300px;
   }
-  .usDescription {
+  .usSection .usDescription {
     font-size: 11px;
-    width: 300px;
+    width: 250px;
   }
 }
 /*Convierte footer de flexbox horizontal a vertical*/
 @media screen and (max-width: 450px) {
-  .footerSection {
+  .footerSection, .footerSectionSmallPages {
     flex-direction: column;
   }
-  .footerSection a {
+  .footerSection a, .footerSectionSmallPages a {
     font-size: 16px;
   }
   .nosotrosImg {
-    height: 100px;
-    width: 200px;
+    height: 150px;
+    width: 250px;
   }
 }
 

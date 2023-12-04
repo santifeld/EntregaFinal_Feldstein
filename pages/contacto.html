@@ -50,33 +50,33 @@
     
     <main>
         <h2>Contacto</h2>
-
-        <form action="form.php" method="POST">
-            <label for="">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre"> 
-            <br>
-            <br>
-            <label for="Email">Email:</label>
-            <input type="text" name="email" id="email" placeholder="nombre@ejemplo.com">
-        <p>
-        Mensaje:
-        </p>
-            <textarea name="" id="" cols="30" rows="10">
-            </textarea>
-
-            <p>
-                Acepta los <a href="https://policies.google.com/terms?hl=es">términos y condiciones</a>
-            </p>
-            <input type="checkbox" name="" id="">
-            <br>
-            <br>
-            <div class="col-auto">
-                <button type="submit" class="btn contactButtonColor mb-3">Enviar</button>
-            </div>
-        </form>    
-
+        <div>
+            <form class="contactForm">
+                <div class="form-group contactFromItem">
+                <label for="inputName">Nombre</label>
+                <input type="text" class="form-control contactFormSampleText" id="inputName" aria-describedby="nameHelp" placeholder="Juan Gonzalez">
+                </div>
+                <div class="form-group contactFromItem">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control contactFormSampleText" id="inputEmail" aria-describedby="emailHelp" placeholder="juan.gonzalez@ejemplo.com">
+                </div>
+                <div class="form-group contactFromItem">
+                    <label for="inputMessage">Mensaje</label>
+                    <textarea class="form-control contactFormSampleText" id="inputMessage" rows="5">Escriba su mensaje aqui.</textarea>
+                </div>
+                <div class="contactFormCheckPolicyLine">
+                    <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="policyCheck">
+                    <label class="form-check-label" for="policyCheck">Acepta los <a href="https://policies.google.com/terms?hl=es">términos y condiciones</a></label>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn contactButtonColor mb-3">Enviar</button>
+                </div>
+            </form>
+        </div>
     </main>
-    <footer class="footerSection">
+    <footer class="footerSectionSmallPages">
         <h3 class="quienesSomos">
             <a href="./quienessomos.html" >¿Quienes somos?</a>
         </h3>

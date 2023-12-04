@@ -249,6 +249,26 @@ hr{
     }
 }
 
+.footerSectionSmallPages{
+    position:fixed;
+    bottom:0;
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: $spaceGreen;
+    color:$spaceBlue;
+    a{
+        font-size: 20px;
+        color: $spaceBlue;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
 /*Estilo particular de cada uno de los elementos del footer*/
     .quienesSomos{
     margin-left:10px;
@@ -277,10 +297,21 @@ ul{
 
 .contactForm{
     display:flex;
+    row-gap: 35px;
     flex-direction: column;
-    justify-content: space-evenly;
-    max-width: 400px;
-    text-align: center;
+    align-items: center;
+    .contactFromItem{
+        width:50%;
+        
+    }
+    .contactFormSampleText{
+        color:$spaceGray;
+    }
+    .contactFormCheckPolicyLine{
+        margin-top: -20px;
+    }
+        
+
 }
 
 .contactButtonColor{

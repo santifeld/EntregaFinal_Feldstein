@@ -29,14 +29,6 @@
     .grid-telescopes-link3{
         height:70%;
     }
-
-    .nosotrosImg{
-        height:400px;
-        width:700px;
-    }
-    
-
-
 }
 
 
@@ -79,11 +71,17 @@
     .nosotrosImg{
         height:200px;
         width:400px;
+        margin-top:100px;
     }
-
-    .usDescription{
-        font-size:14px;
-        width:400px;
+    .usSection{
+        h2{
+            margin-top:50px;
+        }
+        .usDescription{
+            font-size:12px;
+            width:400px;
+            margin-top:50px;
+        }
     }
 }
 
@@ -126,26 +124,27 @@
         font-size:11px;
         width:300px;
     }
-
-    .usDescription{
-        font-size:11px;
-        width:300px;
+    .usSection{
+        .usDescription{
+            font-size:11px;
+            width:250px;
+        }
     }
 
 }
 
 /*Convierte footer de flexbox horizontal a vertical*/
 @media screen and (max-width: 450px){
-    .footerSection {
+    .footerSection, .footerSectionSmallPages{
         flex-direction: column;
 
         a{
             font-size:16px;
         }
     } 
-    
+       
     .nosotrosImg{
-        height:100px;
-        width:200px;
+        height:150px;
+        width:250px;
     }
 }
